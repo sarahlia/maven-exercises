@@ -14,9 +14,13 @@ public class Main {
 //        System.out.println("You Entered: \" " + input + "\"");
         System.out.printf("You Entered: \"%s\"\n", input);
         if(StringUtils.isNumeric(input)) {
-            System.out.printf("\"%s\" is a number", input);
+            System.out.printf("\"%s\" is a number\n", input);
         } else {
-            System.out.printf("\"%s\" is not a number", input);
+            System.out.printf("\"%s\" is not a number\n", input);
+            String flippedCase = StringUtils.swapCase(input);
+            System.out.printf("Flipped case: %s\n", flippedCase);
+            String reversed = StringUtils.reverse(input);
+            System.out.printf("Reversed: %s", reversed);
         }
 
 
